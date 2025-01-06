@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Robotics registration form</title>
+
+    <!-- SETUP BOOTSTRAP: link to Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- link to JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- Add style -->
+    <link rel="stylesheet" type="text/css" href="style.css">  
+    
+</head>
+<body>
+
+
+<!-- Nav tabs -->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+    </a>
+  </div>
+
+
+<!-- Search Bar -->
+    <form class="d-flex ms-auto" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
+        <button class="btn btn-outline-light" type="submit">Search</button>
+    </form>
+
+</nav>
+
+<ul class="nav nav-tabs bg-black" role="tablist">
+    <li class="nav-item d-flex align-items-center">
+        <img src="https://i.graphicmama.com/blog/wp-content/uploads/2021/06/22080117/Free-Cartoon-Robot-Vector-Character-17.png" 
+             alt="Avatar Logo" 
+             style="width:40px; margin-right:20px;" 
+             class="rounded-circle">
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link active" data-bs-toggle="tab" href="#home">Home</a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="tab" href="#registration">Quick Registration</a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="tab" href="#contact">Contact</a>
+    </li>
+</ul>
+
+
+<!-- Tab Content -->
+<div class="tab-content">
+    <div id="home" class="container tab-pane active"><br>
+        <h3>Home</h3>
+        <img src="https://img.freepik.com/premium-vector/cute-robot-waving-hand-cartoon-illustration_138676-2744.jpg" 
+             alt="Avatar Logo" 
+             style="width:100px; margin-right:10px;" 
+             class="rounded-circle">
+        <p>Hi there, Welcome to our Robotics Registration platform! Here, you can sign up, explore, design, and choose your preferred robotics topics to start your learning journey. Whether you're a beginner or an expert, we're here to help you dive into the world of robotics.</p>
+    </div>
+    
+    <div id="registration" class="container tab-pane fade"><br>
+        <h3 class="d-flex align-items-center">
+    <img src="https://static.vecteezy.com/system/resources/previews/048/261/277/non_2x/cute-flying-robot-reading-book-cartoon-illustration-vector.jpg" alt="Instant Registration" style="width: 80px; margin-right: 10px;" class="rounded-circle">
+    Register instantly and get started right away!
+        </h3>
+        
+
+        <!-- Registration Form -->
+        <form>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="inputName" class="form-label text-black">Name</label>
+                    <input type="text" class="form-control" id="inputName" placeholder="Enter your name" required>
+                </div>
+                
+                <div class="col-md-6 mb-3">
+                    <label for="inputAge" class="form-label text-black">Phone Number</label>
+                    <input type="number" class="form-control" id="inputPhone" placeholder="Enter your number" required>
+                </div>
+                
+                <div class="col-md-6 mb-3">
+                    <label for="inputAge" class="form-label text-black">Country</label>
+                    <input type="number" class="form-control" id="inputCountry" placeholder="" required>
+                </div>
+                
+                <div class="col-md-6 mb-3">
+                    <label for="inputName" class="form-label text-black">School District</label>
+                    <input type="text" class="form-control" id="inputSchoolDistrict" placeholder="" required>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+ 
+
+    <div id="contact" class="container tab-pane fade"><br>
+        <h3 class="d-flex align-items-center">
+    <img src="https://img.freepik.com/free-vector/cute-robot-working-laptop-cartoon-vector-icon-illustration-science-technology-isolated-flat_138676-11815.jpg" style="width: 80px; margin-right: 10px;" class="rounded-circle">
+    Contact us if you have any questions!
+        </h3>
+        
+
+        <!-- Contact Tab-->
+        <form>
+            <div class="mb-3">
+                <label for="inputEmail" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="Enter your email" required>
+            </div>
+            <div class="mb-3">
+                <label for="inputMessage" class="form-label">Message</label>
+                <textarea class="form-control" id="inputMessage" rows="3" placeholder="Your message here" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+    </div>
+</div>
+</div>
+
+
+
+<!-- Main Code -->
+<div class="container mt-5">
+        <h2 class="form-check text-black">Robotics registration form</h2>
+        <form>
+             <!-- Name and Age -->
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="inputName" class="form-label text-black">Name</label>
+                    <input type="text" class="form-control" id="inputName" placeholder="Enter your name" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="inputAge" class="form-label text-black">Age</label>
+                    <input type="number" class="form-control" id="inputAge" placeholder="Enter your age" required>
+                </div>
+            </div>
+
+            <!-- Email and Phone Number -->
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="inputEmail" class="form-label text-black">Email Address</label>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="Enter your email" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="inputPhone" class="form-label text-black">Phone Number</label>
+                    <input type="tel" class="form-control" id="inputPhone" placeholder="Enter your phone number" required>
+                </div>
+            </div>
+        
+        <h4 class="text-black">Preferred Robotics Topics</h4>
+            <div class="form-check text-black">
+                <input type="checkbox" class="form-check-input" id="programming">
+                <label for="programming" class="form-check-label">Programming</label>
+            </div>
+            <div class="form-check text-black">
+                <input type="checkbox" class="form-check-input" id="electronics">
+                <label for="electronics" class="form-check-label">Electronics</label>
+            </div>
+            <div class="form-check text-black">
+                <input type="checkbox" class="form-check-input" id="design">
+                <label for="design" class="form-check-label">Mechanical Design</label>
+            </div>
+             
+
+            <h4 class="text-black">Robitics Experience Level</h4>
+             <div class="form-check text-black">
+                <input type="checkbox" class="form-check-input" id="checkRemember">
+                <label for="checkRemember" class="form-check-label"> Beginner </label>
+            </div>
+
+            <div class="form-check text-black">
+                <input type="checkbox" class="form-check-input" id="checkRemember">
+                <label for="checkRemember" class="form-check-label"> Intermediate </label>
+            </div>
+                
+            <div class="form-check text-black">
+                <input type="checkbox" class="form-check-input" id="checkRemember">
+                <label for="checkRemember" class="form-check-label"> Advanced </label>
+            </div>  
+
+       <!-- Text Box -->
+        <div class="mb-3">
+            <label for="inputEmail" class="form-label text-black">Prefered Robitics Project</label>
+            <input type="email" class="form-control" id="PreferedRobiticsProject" placeholder="Enter it here..." required>
+        </div>
+
+        <div class="mb-3">
+            <label for="statementOfInterest" class="form-label text-black">Statement of Interest</label>
+            <textarea class="form-control" id="statementOfInterest" rows="5" placeholder="Type it here..." required></textarea>
+        </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 mt-5">
+    <p>Submitted by David Miguel A. Reyes | Grade 9-Ruby</p>
+    <p>&copy; 2024 Robotics Registration Platform. Start your journey here.</p>
+</footer>
+
+</body>
+</html>
